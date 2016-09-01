@@ -1,0 +1,27 @@
+* {
+    transform: translateY(0);
+    opacity: 1;
+    transition: transform 0.4s,opacity 0.6s;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.hidden.up{
+    transform: translateY(80px);
+}
+
+.hidden.moveToLeft{
+    transform: translateX(80px);
+}
+
+.hidden.moveToRight{
+    transform: translateX(-80px);
+}
+
+.-right{
+    transform: translateX(0);
+    opacity: 1;
+    transition: transform 0.4s,opacity 0.6s;
+}

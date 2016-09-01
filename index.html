@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES6-IntersectionObserver</title>
+    <link rel="stylesheet" href="https://npmcdn.com/hack@0.7.5/dist/hack.css"/>
+    <link rel="stylesheet" href="https://npmcdn.com/hack@0.7.5/dist/standard.css"/>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="standard">
+<a href="https://github.com/maximilienGilet/ES6-IntersectionObserver"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png"></a>
+<div class="container">
+    <h1 class="grid -center">ES6-IntersectionObserver</h1>
+    <blockquote>This is a test of <a href="https://github.com/WICG/IntersectionObserver">ES6's IntersectionObserver</a>.</blockquote>
+    <blockquote>The point is to easily detect if elements are displayed or not.</blockquote>
+    <blockquote>This will allow to create awesome UI</blockquote>
+    <div class="grid -center"><a href="https://github.com/maximilienGilet/ES6-IntersectionObserver" class="btn btn-primary btn-ghost">Take me to the code !</a></div>
+    <h3 class="grid -center ">The following dummy content will be animated when entering on page</h3>
+    <hr>
+    <div class="grid -around">
+        <div class="cell -4of12">
+            <div class="card">
+                <header class="card-header">title</header>
+                <div class="card-content">
+                    <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero
+                        enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut
+                        maiores excepturi sint.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cell -8of12">
+            <div class="grid -center">
+                <ul>
+                    <li>Some
+                        <ul>
+                            <li>Random</li>
+                            <li>List</li>
+                            <li>Of</li>
+                        </ul>
+                    </li>
+                    <li>Random</li>
+                    <li>Things</li>
+                </ul>
+            </div>
+            <div class="card">
+                <header class="card-header">title</header>
+                <div class="card-content">
+                    <div class="inner">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, quas ex vero
+                        enim in doloribus officiis ullam vel nam esse sapiente velit incidunt. Eaque quod et, aut
+                        maiores excepturi sint.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="media left">
+        <div class="media-left">
+            <div class="avatarholder">A</div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">Anon</div>
+            <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+            </div>
+        </div>
+    </div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="card">
+        <header class="card-header">Hello I'm a big block of text !</header>
+        <div class="card-content">
+            <div class="inner">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet asperiores atque, beatae
+                    doloribus esse, eum harum iste laboriosam maxime minus nesciunt non odio omnis porro quaerat quasi
+                    totam ut.
+                </div>
+                <div>Commodi facere minima molestias officia quo similique soluta suscipit velit, vero. Adipisci, autem
+                    eaque impedit incidunt iusto perferendis quisquam voluptates? Alias aut, cupiditate expedita facilis
+                    illum minima quas sed voluptate.
+                </div>
+                <div>Commodi, eum magnam molestiae natus praesentium tenetur vitae voluptatem! Ab aliquid amet at
+                    deserunt doloremque, ducimus eaque iure maxime, minima nisi officia omnis quasi quia quibusdam
+                    quidem saepe sint totam?
+                </div>
+                <div>Ab alias assumenda atque autem blanditiis, deserunt dignissimos dolores doloribus ex, fugit hic
+                    inventore ipsam ipsum iure iusto labore provident quidem rem similique suscipit unde veniam vero.
+                    Officia, quibusdam rerum.
+                </div>
+                <div>Ad, adipisci asperiores beatae culpa dolor ducimus ea, eligendi ipsum iure, libero maxime odio
+                    optio quas quos sequi ullam veritatis voluptas? Dicta doloremque ducimus eum exercitationem, ipsa
+                    sunt ut voluptates.
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="media left">
+        <div class="media-left">
+            <div class="avatarholder">A</div>
+        </div>
+        <div class="media-body">
+            <div class="media-heading">Anon</div>
+            <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+            </div>
+        </div>
+    </div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>    <div class="media left">
+    <div class="media-left">
+        <div class="avatarholder">A</div>
+    </div>
+    <div class="media-body">
+        <div class="media-heading">Anon</div>
+        <div class="media-content">Lorem ipsum ! IntersectionObserver is cool !
+        </div>
+    </div>
+</div>
+    <div class="grid -right">
+        <div class="media right">
+            <div class="media-body">
+                <div class="media-heading">John Doe</div>
+                <div class="media-content">Again some random text to fill space</div>
+            </div>
+            <div class="media-right">
+                <div class="avatarholder">J</div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="foot">
+        <hr>
+        <div class="grid -center"><h3>Cool uh ?</h3></div>
+        <div class="grid -center">A test by</div>
+        <div class="grid -center"><a href="https://github.com/maximilienGilet">@maximilienGilet</a></div>
+        <div class="grid -center">Made with ♥ and &nbsp; <a href="https://github.com/egoist/hack">Hack css</a></div>
+    </div>
+    <br>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
