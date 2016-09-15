@@ -12,28 +12,27 @@ let observer = new IntersectionObserver(function (observables) {
 
 
 let cards = document.querySelectorAll('.card')
-cards.forEach(function (card) {
-    card.classList.add('hidden')
-    card.classList.add('up')
-    observer.observe(card)
-})
+for (var i = 0, len = cards.length; i < len; i++) {
+  cards[i].classList.add('hidden')
+  cards[i].classList.add('up')
+  observer.observe(cards[i])
+}
 
 let rigthItems = document.querySelectorAll('.right')
-rigthItems.forEach(function (rigthItem) {
-    rigthItem.classList.add('hidden')
-    rigthItem.classList.add('moveToLeft')
-    observer.observe(rigthItem)
-})
+for (var i = 0, len = rigthItems.length; i < len; i++) {
+  rigthItems[i].classList.add('hidden')
+  rigthItems[i].classList.add('up')
+  observer.observe(rigthItems[i])
+}
 
 let leftItems = document.querySelectorAll('.left')
-leftItems.forEach(function (leftItem) {
-    leftItem.classList.add('hidden')
-    leftItem.classList.add('moveToRight')
-    observer.observe(leftItem)
-})
+for (var i = 0, len = leftItems.length; i < len; i++) {
+  leftItems[i].classList.add('hidden')
+  leftItems[i].classList.add('up')
+  observer.observe(leftItems[i])
+}
 
 let foot = document.querySelector('#foot')
-console.log(foot);
 foot.classList.add('hidden')
 foot.classList.add('up')
 observer.observe(foot)
